@@ -7,6 +7,7 @@ MOV = [0 0 0];
 eixoX = [1 0];
 eixoY = [0 1];
 
+pause(
 while true
     
     x = axis(joy, 1);
@@ -22,7 +23,12 @@ while true
     
     vel = norm(dir); %(x^2 + y^2)^(1/2)
     
-    for i = 0; i <= 2; i++
+    %for i = 0; i <= 2; i++
+     %MOV(1,i) = rem(vel,10);
+        %vel = vel / 10;
+    %end
+    
+    for i = 0:2
         MOV(1,i) = rem(vel,10);
         vel = vel / 10;
     end
@@ -37,7 +43,7 @@ while true
         AX = -2;
     end
     
-    for i = 0; i <= 2; i++
+    for i = 0:2
         %fwrite (joy, MOV(1,i);
         MOV(1,i)
     end
