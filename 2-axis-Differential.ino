@@ -37,7 +37,7 @@ void loop() {
 
 	incPwm = 0;
 
-	val = pwm[2] + pwm[1]*10 + pwm[0]*100;
+	val = pwm[0] + pwm[1]*10 + pwm[2]*100;
 	modVal = |val|;
 
 	if (pwm[3] == 'x') {
@@ -76,4 +76,3 @@ void loop() {
 	}
 
 }
-
