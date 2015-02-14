@@ -1,4 +1,3 @@
-// 2-axis Differential.ino
 /*
 	Universidade Federal de Campina Grande
 	Eduardo Figueiredo Porto Filho
